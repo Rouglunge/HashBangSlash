@@ -1,0 +1,65 @@
+<!--
+   HTMLEncode.html
+   
+   Copyright 2015 Rouglunge <https://www.youtube.com/channel/UCbhB_eggdTYjn4oey7wK-Gg/feed>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+<!DOCTYPE html PUBLIC>
+<html xml:lang="en" lang="en">
+
+	<head>
+		<title>HTML Encode</title>
+		
+		<script>
+		
+			var script = document.createElement('script');
+			script.src = 'http://code.jquery.com/jquery-2.1.4.min.js';
+			script.type = 'text/javascript';
+			document.getElementsByTagName('head')[0].appendChild(script);
+
+		</script>
+		
+		<script>
+
+			function htmlEncode()
+			{
+				
+				txtInput = document.getElementById('txtInput').value ;
+				var text = $('<div/>').text(txtInput).html() ;
+				var txtOut = document.getElementById('txtOutput');
+				txtOut.value = text;
+				
+			}
+		</script>
+	</head>
+
+	<body>
+		
+		<div>
+			<textarea id = "txtInput" cols = "200" rows = "20" placeholder = "Enter Your Code Here"></textarea></br>
+			<input type = "submit" value = "Convert" onClick = "htmlEncode();">
+		</div></br>
+		
+		<div>
+			<textarea id = "txtOutput" cols = "200" rows = "20" readonly placeholder = "HTML Encoded Text Outputs Here"></textarea>
+		</div>
+	</body>
+
+</html>
