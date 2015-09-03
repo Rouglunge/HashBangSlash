@@ -27,6 +27,9 @@
 	<head>
 		<title>HTML Encode</title>
 		
+		<!--
+		This enables jQuery to be used
+		-->
 		<script>
 		
 			var script = document.createElement('script');
@@ -38,12 +41,19 @@
 		
 		<script>
 
+			//This function takes the text from the first textarea, converts special (meta) characters to HTML, then displays the result in the second textarea
 			function htmlEncode()
 			{
-				
+				//This obtains the text from the first textarea (txtInput)
 				txtInput = document.getElementById('txtInput').value ;
+				
+				//This converts any special characters to HTML using jQuery
 				var text = $('<div/>').text(txtInput).html() ;
+				
+				//This finds the second textarea (tstOutput)
 				var txtOut = document.getElementById('txtOutput');
+				
+				//This inserts the converted text into txtOutput
 				txtOut.value = text;
 				
 			}
