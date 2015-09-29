@@ -1,2 +1,1 @@
-# HashBangSlash
-Scripts From HashBangSlash Videos
+Example Webpage With Title And Favicon
