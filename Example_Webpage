@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+
+	<head>
+		<!-- This is the title of the webpage -->
+		<title>My Title</title>
+		<!-- This is the title-image (favicon) of the webpage -->
+		<!-- You will need to create "favicon.ico" and place it at the same level (in the same folder) as this webpage -->
+		<link rel = "shortcut icon" href = "favicon.ico" />
+		<style>
+			body
+			{
+				background-color: lightblue;
+			}
+			
+			h1
+			{
+				color: white;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Example Website</h1>
+	</body>
+
+</html>
